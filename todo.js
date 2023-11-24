@@ -31,12 +31,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.querySelector('form').onsubmit = () => {
 
-        const task = newTask.value;
+        const item = newTask.value;
 
-        const li = document.createElement('li');
-        li.innerHTML = task;
+        const list = document.createElement('li');
+        list.innerHTML = item;
 
-        document.querySelector('#tasks').append(li);
+        document.querySelector('#tasks').append(list);
 
         newTask.value = '';
 
