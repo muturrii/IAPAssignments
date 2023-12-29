@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Images/756e9272addab7f73d334cefad1d6fe1.jpg" class="rounded">
+    <title>Andrew Garfield</title>
+    <script src="script.js"></script>
+
+</head>
+<body>
+<center><h1>Andrew Garfield</h1></center>
+
+<ul>
+  <li><a href="index2.html">Home</a></li>
+  <li><a href="awards.html">Awards</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+<h1>Contact Him</h1>     
+<form action="" name="Form1" onsubmit="return validateInput()">
+    <fieldset>
+        <legend>Send a Message!</legend>
+        Name &nbsp;&nbsp;
+        <input type="text" name="userName" 
+        onclick="document.getElementById('inputfield').innerHTML = 'Cannot be Empty'"
+        onkeydown="document.getElementById('inputfield').innerHTML = ''">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Age &nbsp;&nbsp;
+        <input type="number" name="userAge"
+        onclick="document.getElementById('inputfield').innerHTML = 'Cannot be Empty'"
+        onkeydown="document.getElementById('inputfield').innerHTML = ''">
+        <!-- Using the required attribute to form validate-->
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Number &nbsp;&nbsp;
+        <input type="number" name="userPhone" 
+        onclick="document.getElementById('inputfield').innerHTML = 'Cannot be Empty'"
+        onkeydown="document.getElementById('inputfield').innerHTML = ''">
+        <p id="inputfield" ></p><br><br>
+        Message &nbsp;&nbsp;
+        <input type="text" name="message" 
+        onclick="document.getElementById('inputfields').innerHTML = 'Cannot be Empty'"
+        onkeydown="document.getElementById('inputfields').innerHTML = ''">
+        <p id="inputfields" ></p><br><br>
+
+        <button type="submit">Submit</button>
+    </fieldset>
+</form>
+    <footer>
+        <p>&copy; 2023 Andrew Garfield Website</p>
+    </footer>
+
+</body>
+</html>
